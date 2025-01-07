@@ -1,0 +1,16 @@
+curl --location --request POST 'https://api.coze.cn/v3/chat' \
+--header 'Authorization: Bearer pat_OYDacMzM3WyOWV3Dtj2bHRMymzxP****' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "bot_id": "",
+    "user_id": "",
+    "stream": false,
+    "auto_save_history":true,
+    "additional_messages":[
+        {
+            "role":"user",
+            "content":"hello!",
+            "content_type":"text"
+        }
+    ]
+}'
